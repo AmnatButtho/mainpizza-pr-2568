@@ -1,70 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pizza Menu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url('img/pizza-background.jpg'); /* ใช้ภาพพิซซ่าเป็นพื้นหลัง */
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-    }
-    .menu {
-      background-color: rgba(234, 156, 127, 0.95);
-      width: 350px;
-      margin: 50px auto;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    .section-title {
-      font-weight: bold;
-      font-size: 20px;
-      margin-top: 20px;
-    }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 5px 0;
-    }
-    hr {
-      margin: 10px 0;
-    }
-    .contact {
-      margin-top: 15px;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/pizza-favicon.ico">
 </head>
 <body>
-  <div class="menu">
+  <div class="menu-container">
     <h1>Pizza Menu</h1>
-    <em>Est. 1965</em>
+    <p class="subtext">Est. 1965</p>
     <hr>
 
-    <div class="section-title"> Pizza</div>
-    <img src="img/pizza-icon.png" width="30" height="30">
-    <div class="item"><span>Bacon and Sausage</span><span>129 Baht</span></div>
-    <div class="item"><span>Hawaiian</span><span>139 Baht</span></div>
-    <div class="item"><span>BBQ Chicken</span><span>139 Baht</span></div>
-    <div class="item"><span>Mushroom</span><span>119 Baht</span></div>
+    <h2><img src="img/pizza-icon.png" alt="Pizza Icon" class="icon"> Pizza</h2>
+    <ul class="menu-list">
+      <li>Bacon and Sausage <span>129 Baht</span></li>
+      <li>Hawaiian <span>139 Baht</span></li>
+      <li>BBQ Chicken <span>139 Baht</span></li>
+      <li>Mushroom <span>119 Baht</span></li>
+    </ul>
 
-    <div class="section-title"> Drinks</div>
-    <img src="img/drink.png" width="30" height="30">
-    <div class="item"><span>Strawberry Soda</span><span>20 Baht</span></div>
-    <div class="item"><span>Coca-Cola</span><span>30 Baht</span></div>
-    <div class="item"><span>Water</span><span>15 Baht</span></div>
+    <h2><img src="img/drink.png" alt="Drink Icon" class="icon"> Drinks</h2>
+    <ul class="menu-list">
+      <li>Strawberry Soda <span>20 Baht</span></li>
+      <li>Coca-Cola <span>30 Baht</span></li>
+      <li>Water <span>15 Baht</span></li>
+    </ul>
 
     <hr>
-    <div class="contact">
-      Contact us: 02-222-222<br>
-      More about Pizza!
-    </div>
+    <p class="contact">Contact us: 02-222-222</p>
+    <p class="more">More about Pizza!</p>
   </div>
 </body>
 </html>
